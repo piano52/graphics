@@ -32,40 +32,6 @@ function setup() {
     for (var y = 0; y < rows; y++) {
       terrain[x][y] = 0; //specify a default value for now
     
- var cols, rows;
-var scl = 29;
-var w = 3000;
-var h = 2500;
-var flying = 0;
-var terrain = [];
-let Bslider;
-let Xslider;
-
-function setup() {
-  createCanvas(windowWidth,windowHeight, WEBGL);
-  colorMode(RGB);
-  
-  Bslider = createSlider(0, 255, 60, 10);
-  Bslider.position(10, 10);
-  Bslider.style('width', '80px');
-  Xslider = createSlider(-500, 500, 60, 3);
-  Xslider.position(10, 20);
-  Xslider.style('width', '80px');
-  Yslider = createSlider(-400, 200, 100, 2);
-  Yslider.position(10, 30);
-  Yslider.style('width', '80px');
- 
-   
-  {
-    
-  
-  cols = w / scl;
-  rows = h / scl;
-  for (var x = 0; x < cols; x++) {
-    terrain[x] = [];
-    for (var y = 0; y < rows; y++) {
-      terrain[x][y] = 0; //specify a default value for now
-    
   }
   }
 }
